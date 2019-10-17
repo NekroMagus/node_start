@@ -10,8 +10,10 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-
+    res.type('text/plain');
+    res.end('About page');
 });
+
 
 app.use((req, res) => {
     res.type('text/plain');
